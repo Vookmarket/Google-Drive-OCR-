@@ -28,3 +28,19 @@ var outputSpreadsheetId = 'your_spreadsheet_id';
 var processedFolderId = 'your_processed_folder_id'; // オプション
 
 var textList = ocrImagesInFolder(folderId, targetFormats, outputSpreadsheetId, processedFolderId);
+```
+### 注意点
+
+* スクリプトを実行する前に、Google Drive APIとGoogle Sheets APIを有効にする必要があります。
+* スプレッドシートとフォルダのIDは、それぞれのファイル/フォルダのURLから確認できます。
+* 大量の画像ファイルを処理する場合は、Google Apps Scriptの実行時間制限に注意してください。
+* OCRの精度は画像の品質や内容に依存します。完璧なテキスト抽出は保証されません。
+* **このスクリプトは、指定したフォルダ内のファイルのみを処理し、サブフォルダ内のファイルは処理しません。**
+
+### ライセンス
+
+このスクリプトはMITライセンスのもとで公開されています。自由に改変・再配布できますが、著作権表示とライセンス表示を残してください。
+
+### 免責事項
+
+このスクリプトの使用によって生じた損害について、作者は一切の責任を負いません。自己責任でご利用ください。
